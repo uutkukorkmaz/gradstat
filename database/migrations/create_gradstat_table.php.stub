@@ -8,10 +8,14 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('migration_table_name_table', function (Blueprint $table) {
+        Schema::create('gradstats', function (Blueprint $table) {
             $table->id();
+            $table->string('model');
+            $table->string('column');
 
-            // add fields
+            $table->string('value');
+
+            $table->timestamp('observed_at')->nullable();
 
             $table->timestamps();
         });
