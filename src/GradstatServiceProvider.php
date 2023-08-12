@@ -4,7 +4,6 @@ namespace Uutkukorkmaz\Gradstat;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Uutkukorkmaz\Gradstat\Commands\GradstatCommand;
 
 class GradstatServiceProvider extends PackageServiceProvider
 {
